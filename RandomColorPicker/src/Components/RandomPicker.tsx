@@ -2,7 +2,7 @@ import { useState } from "react";
 
 
 const RandomPicker = () => {
-    const [colorType,setColorType] = useState("HEX");
+    const [colorType,setColorType] = useState<string>("HEX");
     function generateRandom(length:number){
         return Math.floor(Math.random()*length);
     }
@@ -19,9 +19,9 @@ const RandomPicker = () => {
         console.log(color);
     }
     function handleRGB(){
-        const R = generateRandom(256);
-        const G = generateRandom(256);
-        const B = generateRandom(256);
+        const R:number = generateRandom(256);
+        const G:number = generateRandom(256);
+        const B:number = generateRandom(256);
         const generateColor:string = (`rgb(${R},${G},${B})`) 
         setColorType("RGB");
         setColor(generateColor);
