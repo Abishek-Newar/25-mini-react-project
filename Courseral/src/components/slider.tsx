@@ -41,7 +41,7 @@ export default function Slider({url,page,limit}:data){
         setCurrentSlide(currentSlide === images.length-1 ? 0 : currentSlide + 1)
     }
 
-    function handleClick(index){
+    function handleClick(index:number){
         setCurrentSlide(index)
     }
     if(loading){
