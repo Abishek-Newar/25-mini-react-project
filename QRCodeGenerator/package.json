@@ -1,5 +1,5 @@
 {
-  "name": "tree-view",
+  "name": "qrcodegenerator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.4.1"
+    "react-qr-code": "^2.0.12"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
