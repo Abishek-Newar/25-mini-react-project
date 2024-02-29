@@ -33,7 +33,7 @@ const ScrollIndicator = () => {
     <div className=" w-screen h-6 bg-red-600 flex justify-start sticky top-0"><div className="bg-green-300" style={{width: `${scroll}%`}}></div></div>
     
     <h1 className="text-3xl uppercase mb-5 text-center ">Products</h1>
-    {data.map((item,index)=>(
+    {data.map((item:any,index:number)=>(
         <div className="text-center" key={index}>{item.title}</div>
     ))}
   </>
